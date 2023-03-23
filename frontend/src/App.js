@@ -23,7 +23,7 @@ function App() {
   console.log(user);
   const dispatch = useDispatch();
   useEffect(() => {
-    const socket = io("ws://localhost:8080");
+    const socket = io("https://spontaneous-lokum-4f8939.netlify.app/");
     socket.off("notification").on("notification", (msgObj, user_id) => {
       // logic for notification
       if (user_id === user._id) {
