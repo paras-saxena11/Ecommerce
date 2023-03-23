@@ -9,7 +9,8 @@ require("./connection");
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, {
-  cors: "http://localhost:3000",
+  //cors: "http://localhost:3000",
+  cors: "https://spontaneous-lokum-4f8939.netlify.app/",
   methods: ["GET", "POST", "PATCH", "DELETE"],
 });
 
